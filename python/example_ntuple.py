@@ -16,7 +16,7 @@ uniform_h = ROOT.TH1I("uniform", "Uniform distribution", 101, 0, 101)
 
 for entry in range(entries):
     n.GetEntry(entry)
-    gauss_h.Fill(n.val("gauss"))
+    gauss_h.Fill(n.val("gauss_0"))
     uniform_h.Fill(n.val("uniform_0"))
 
 canvas = ROOT.TCanvas("c", "c", 400, 400)
